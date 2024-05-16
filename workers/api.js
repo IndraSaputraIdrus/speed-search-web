@@ -21743,7 +21743,7 @@ var searchRoute = new Hono2().get("/", async (c) => {
 // workers/api.ts
 var app = new Hono2().basePath("/api");
 app.use("*", cors({
-  origin: "http://localhost:3000",
+  origin: ["http://localhost:3000", "https://speed-search-web-ndrainz.vercel.app"],
   allowMethods: ["GET"]
 }));
 app.get("/", (c) => {

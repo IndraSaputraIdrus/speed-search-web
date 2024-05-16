@@ -5,7 +5,7 @@ import { searchRoute } from './search';
 const app = new Hono().basePath('/api')
 
 app.use("*", cors({
-  origin: "http://localhost:3000",
+  origin: ["http://localhost:3000", "https://speed-search-web-ndrainz.vercel.app"],
   allowMethods: ["GET"],
 }))
 
